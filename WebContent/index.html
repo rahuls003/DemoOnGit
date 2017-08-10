@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+	<script src="lib/angular.js"></script>
+	<script src="lib/angular-route.js"></script>
+	
+	<script src="script.js"></script>
+	<script src="Job/JobController.js"></script>
+	<script src="Login/UserController.js"></script>
+	
+</head>
+    
+<body ng-app="RoutingApp">
+
+	<div class="container">
+	
+	<div style="color:red; text-align: center;  ">
+	<h1>Chatting Point</h1>
+	<hr>
+	</div>
+	
+	<div class="row" style="font-size:20px ">
+    <div class="col-sm-9">
+	
+	<a href="#!/first">BLOG</a>           &nbsp&nbsp&nbsp&nbsp  
+	
+	<a href="#!/second">FRIEND</a>    &nbsp&nbsp&nbsp&nbsp
+	
+	<a href="#!/job">JOB</a>
+	</div>
+	
+	<div class="col-sm-3">
+	<a href="#!/login">LOGIN</a>           &nbsp&nbsp&nbsp&nbsp
+	
+	<a href="#!/register">REGISTER</a>
+	</div>
+	</div>
+	
+	<div ng-view>
+	</div>
+	
+	</div>
+</body>
+</html>
