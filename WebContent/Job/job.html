@@ -1,0 +1,24 @@
+
+
+
+<body ng-controller="JobController1" >
+
+
+	<h2>Welcome to Job Page</h2>
+<br>
+    <p>   {{msg}}    </p>                                       <br><br>
+    
+    {{job.id}} - {{job.title}}-{{job.qualification}}            <br><br>
+    
+    <div ng-repeat="job in jobs">
+    
+    {{job.id}}                          &nbsp&nbsp&nbsp&nbsp
+    {{job.title}}						&nbsp&nbsp&nbsp&nbsp
+    {{job.qualification}}     <br>
+    </div>
+    
+    
+    
+
+</body>
+
